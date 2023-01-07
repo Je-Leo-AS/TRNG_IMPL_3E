@@ -1,0 +1,207 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+O_Ring
+# storage
+db|TRNG_IMPL_3.(1).cnf
+db|TRNG_IMPL_3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+|users|leona|onedrive - ufpr.br|ic|projetos|quartus ii|rng|trng|o_ring.vhd
+5d4441114358d5b84ca44612cc92887
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+O_Ring:anel_1_1
+O_Ring:anel_2_1
+O_Ring:anel_3_1
+O_Ring:anel_4_1
+O_Ring:anel_5_1
+O_Ring:anel_6_1
+O_Ring:anel_7_1
+O_Ring:anel_8_1
+O_Ring:anel_9_1
+O_Ring:anel_10_1
+O_Ring:anel_11_1
+O_Ring:anel_12_1
+O_Ring:anel_13_1
+O_Ring:anel_14_1
+O_Ring:anel_15_1
+O_Ring:anel_16_1
+O_Ring:anel_1_2
+O_Ring:anel_3_2
+O_Ring:anel_4_2
+O_Ring:anel_5_2
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+flipflop
+# storage
+db|TRNG_IMPL_3.(2).cnf
+db|TRNG_IMPL_3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+|users|leona|onedrive - ufpr.br|ic|projetos|quartus ii|rng|trng|flipflop.vhd
+56b54d196e98b1962815f47a627f50bf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+flipflop:flip_1_1
+flipflop:flip_2_1
+flipflop:flip_3_1
+flipflop:flip_4_1
+flipflop:flip_5_1
+flipflop:flip_6_1
+flipflop:flip_7_1
+flipflop:flip_8_1
+flipflop:flip_9_1
+flipflop:flip_10_1
+flipflop:flip_11_1
+flipflop:flip_12_1
+flipflop:flip_13_1
+flipflop:flip_14_1
+flipflop:flip_15_1
+flipflop:flip_16_1
+flipflop:flip_1_2
+flipflop:flip_2_2
+flipflop:flip_3_2
+flipflop:flip_4_2
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+XOR_C
+# storage
+db|TRNG_IMPL_3.(3).cnf
+db|TRNG_IMPL_3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+|users|leona|onedrive - ufpr.br|ic|projetos|quartus ii|rng|trng|xor_c.vhd
+5ccd769e461c64eb981c67ef4aa1098
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+XOR_C:XOR_1_1
+XOR_C:XOR_2_1
+XOR_C:XOR_3_1
+XOR_C:XOR_4_1
+XOR_C:XOR_5_1
+XOR_C:XOR_6_1
+XOR_C:XOR_7_1
+XOR_C:XOR_8_1
+XOR_C:XOR_1_2
+XOR_C:XOR_2_2
+XOR_C:XOR_3_2
+XOR_C:XOR_4_2
+XOR_C:XOR_1_3
+XOR_C:XOR_2_3
+XOR_C:XOR_3_3
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+TRNG_IMPL_3
+# storage
+db|TRNG_IMPL_3.(0).cnf
+db|TRNG_IMPL_3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+trng_impl_3.vhd
+c79d5de42129154b4fcc9ee59156c50
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+d:|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,859 @@
+Analysis & Synthesis report for TRNG_IMPL_3
+Thu Sep 15 16:01:07 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Source assignments for O_Ring:anel_1_1
+ 10. Source assignments for O_Ring:anel_2_1
+ 11. Source assignments for O_Ring:anel_3_1
+ 12. Source assignments for O_Ring:anel_4_1
+ 13. Source assignments for O_Ring:anel_5_1
+ 14. Source assignments for O_Ring:anel_6_1
+ 15. Source assignments for O_Ring:anel_7_1
+ 16. Source assignments for O_Ring:anel_8_1
+ 17. Source assignments for O_Ring:anel_9_1
+ 18. Source assignments for O_Ring:anel_10_1
+ 19. Source assignments for O_Ring:anel_11_1
+ 20. Source assignments for O_Ring:anel_12_1
+ 21. Source assignments for O_Ring:anel_13_1
+ 22. Source assignments for O_Ring:anel_14_1
+ 23. Source assignments for O_Ring:anel_15_1
+ 24. Source assignments for O_Ring:anel_16_1
+ 25. Source assignments for O_Ring:anel_1_2
+ 26. Source assignments for O_Ring:anel_3_2
+ 27. Source assignments for O_Ring:anel_4_2
+ 28. Source assignments for O_Ring:anel_5_2
+ 29. Port Connectivity Checks: "O_Ring:anel_16_1"
+ 30. Port Connectivity Checks: "O_Ring:anel_15_1"
+ 31. Port Connectivity Checks: "O_Ring:anel_14_1"
+ 32. Port Connectivity Checks: "O_Ring:anel_13_1"
+ 33. Port Connectivity Checks: "O_Ring:anel_12_1"
+ 34. Port Connectivity Checks: "O_Ring:anel_11_1"
+ 35. Port Connectivity Checks: "O_Ring:anel_10_1"
+ 36. Port Connectivity Checks: "O_Ring:anel_9_1"
+ 37. Port Connectivity Checks: "O_Ring:anel_8_1"
+ 38. Port Connectivity Checks: "O_Ring:anel_7_1"
+ 39. Port Connectivity Checks: "O_Ring:anel_6_1"
+ 40. Port Connectivity Checks: "O_Ring:anel_5_1"
+ 41. Port Connectivity Checks: "O_Ring:anel_4_1"
+ 42. Port Connectivity Checks: "O_Ring:anel_3_1"
+ 43. Port Connectivity Checks: "O_Ring:anel_2_1"
+ 44. Port Connectivity Checks: "O_Ring:anel_1_1"
+ 45. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Thu Sep 15 16:01:07 2022        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; TRNG_IMPL_3                                  ;
+; Top-level Entity Name         ; TRNG_IMPL_3                                  ;
+; Family                        ; Stratix II                                   ;
+; Logic utilization             ; N/A                                          ;
+;     Combinational ALUTs       ; 96                                           ;
+;     Dedicated logic registers ; 37                                           ;
+; Total registers               ; 37                                           ;
+; Total pins                    ; 3                                            ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0                                            ;
+; DSP block 9-bit elements      ; 0                                            ;
+; Total PLLs                    ; 0                                            ;
+; Total DLLs                    ; 0                                            ;
++-------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; TRNG_IMPL_3        ; TRNG_IMPL_3        ;
+; Family name                                                                ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                             ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+
+; TRNG_IMPL_3.vhd                  ; yes             ; User VHDL File  ; C:/Users/Leona/OneDrive - ufpr.br/IC/Projetos/Quartus II/RNG/TRNG_IMPL_3/TRNG_IMPL_3.vhd ;
+; ../TRNG/flipflop.vhd             ; yes             ; User VHDL File  ; C:/Users/Leona/OneDrive - ufpr.br/IC/Projetos/Quartus II/RNG/TRNG/flipflop.vhd           ;
+; ../TRNG/O_Ring.vhd               ; yes             ; User VHDL File  ; C:/Users/Leona/OneDrive - ufpr.br/IC/Projetos/Quartus II/RNG/TRNG/O_Ring.vhd             ;
+; ../TRNG/XOR_C.vhd                ; yes             ; User VHDL File  ; C:/Users/Leona/OneDrive - ufpr.br/IC/Projetos/Quartus II/RNG/TRNG/XOR_C.vhd              ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++-----------------------------------------------+-------+
+; Resource                                      ; Usage ;
++-----------------------------------------------+-------+
+; Estimated ALUTs Used                          ; 96    ;
+; Dedicated logic registers                     ; 37    ;
+;                                               ;       ;
+; Estimated ALUTs Unavailable                   ; 0     ;
+;                                               ;       ;
+; Total combinational functions                 ; 96    ;
+; Combinational ALUT usage by number of inputs  ;       ;
+;     -- 7 input functions                      ; 0     ;
+;     -- 6 input functions                      ; 0     ;
+;     -- 5 input functions                      ; 0     ;
+;     -- 4 input functions                      ; 0     ;
+;     -- <=3 input functions                    ; 96    ;
+;                                               ;       ;
+; Combinational ALUTs by mode                   ;       ;
+;     -- normal mode                            ; 96    ;
+;     -- extended LUT mode                      ; 0     ;
+;     -- arithmetic mode                        ; 0     ;
+;     -- shared arithmetic mode                 ; 0     ;
+;                                               ;       ;
+; Estimated ALUT/register pairs used            ; 97    ;
+;                                               ;       ;
+; Total registers                               ; 37    ;
+;     -- Dedicated logic registers              ; 37    ;
+;     -- I/O registers                          ; 0     ;
+;                                               ;       ;
+; Estimated ALMs:  partially or completely used ; 49    ;
+;                                               ;       ;
+; I/O pins                                      ; 3     ;
+; Maximum fan-out node                          ; rst   ;
+; Maximum fan-out                               ; 52    ;
+; Total fan-out                                 ; 246   ;
+; Average fan-out                               ; 1.81  ;
++-----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; |TRNG_IMPL_3               ; 96 (1)            ; 37 (2)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |TRNG_IMPL_3                    ; work         ;
+;    |O_Ring:anel_10_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_10_1   ; work         ;
+;    |O_Ring:anel_11_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_11_1   ; work         ;
+;    |O_Ring:anel_12_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_12_1   ; work         ;
+;    |O_Ring:anel_13_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_13_1   ; work         ;
+;    |O_Ring:anel_14_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_14_1   ; work         ;
+;    |O_Ring:anel_15_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_15_1   ; work         ;
+;    |O_Ring:anel_16_1|      ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_16_1   ; work         ;
+;    |O_Ring:anel_1_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_1_1    ; work         ;
+;    |O_Ring:anel_1_2|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_1_2    ; work         ;
+;    |O_Ring:anel_2_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_2_1    ; work         ;
+;    |O_Ring:anel_3_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_3_1    ; work         ;
+;    |O_Ring:anel_3_2|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_3_2    ; work         ;
+;    |O_Ring:anel_4_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_4_1    ; work         ;
+;    |O_Ring:anel_4_2|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_4_2    ; work         ;
+;    |O_Ring:anel_5_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_5_1    ; work         ;
+;    |O_Ring:anel_5_2|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_5_2    ; work         ;
+;    |O_Ring:anel_6_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_6_1    ; work         ;
+;    |O_Ring:anel_7_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_7_1    ; work         ;
+;    |O_Ring:anel_8_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_8_1    ; work         ;
+;    |O_Ring:anel_9_1|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|O_Ring:anel_9_1    ; work         ;
+;    |XOR_C:XOR_1_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_1_1      ; work         ;
+;    |XOR_C:XOR_1_2|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_1_2      ; work         ;
+;    |XOR_C:XOR_1_3|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_1_3      ; work         ;
+;    |XOR_C:XOR_2_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_2_1      ; work         ;
+;    |XOR_C:XOR_2_2|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_2_2      ; work         ;
+;    |XOR_C:XOR_2_3|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_2_3      ; work         ;
+;    |XOR_C:XOR_3_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_3_1      ; work         ;
+;    |XOR_C:XOR_3_2|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_3_2      ; work         ;
+;    |XOR_C:XOR_3_3|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_3_3      ; work         ;
+;    |XOR_C:XOR_4_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_4_1      ; work         ;
+;    |XOR_C:XOR_4_2|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_4_2      ; work         ;
+;    |XOR_C:XOR_5_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_5_1      ; work         ;
+;    |XOR_C:XOR_6_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_6_1      ; work         ;
+;    |XOR_C:XOR_7_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_7_1      ; work         ;
+;    |XOR_C:XOR_8_1|         ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|XOR_C:XOR_8_1      ; work         ;
+;    |flipflop:flip_10_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_10_1 ; work         ;
+;    |flipflop:flip_11_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_11_1 ; work         ;
+;    |flipflop:flip_12_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_12_1 ; work         ;
+;    |flipflop:flip_13_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_13_1 ; work         ;
+;    |flipflop:flip_14_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_14_1 ; work         ;
+;    |flipflop:flip_15_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_15_1 ; work         ;
+;    |flipflop:flip_16_1|    ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_16_1 ; work         ;
+;    |flipflop:flip_1_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_1_1  ; work         ;
+;    |flipflop:flip_1_2|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_1_2  ; work         ;
+;    |flipflop:flip_2_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_2_1  ; work         ;
+;    |flipflop:flip_2_2|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_2_2  ; work         ;
+;    |flipflop:flip_3_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_3_1  ; work         ;
+;    |flipflop:flip_3_2|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_3_2  ; work         ;
+;    |flipflop:flip_4_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_4_1  ; work         ;
+;    |flipflop:flip_4_2|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_4_2  ; work         ;
+;    |flipflop:flip_5_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_5_1  ; work         ;
+;    |flipflop:flip_6_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_6_1  ; work         ;
+;    |flipflop:flip_7_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_7_1  ; work         ;
+;    |flipflop:flip_8_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_8_1  ; work         ;
+;    |flipflop:flip_9_1|     ; 0 (0)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |TRNG_IMPL_3|flipflop:flip_9_1  ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 36    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_1_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_2_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_3_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_4_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_5_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_6_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_7_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_8_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_9_1             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_10_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_11_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_12_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_13_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_14_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_15_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_16_1            ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_1_2             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_3_2             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_4_2             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------------+
+; Source assignments for O_Ring:anel_5_2             ;
++------------------------------+-------+------+------+
+; Assignment                   ; Value ; From ; To   ;
++------------------------------+-------+------+------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig1 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig1 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig2 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig2 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig3 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig3 ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; sig4 ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; sig4 ;
++------------------------------+-------+------+------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_16_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_15_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_14_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_13_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_12_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_11_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_10_1" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; a    ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_9_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_8_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_7_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_6_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_5_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_4_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_3_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_2_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "O_Ring:anel_1_1" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; a    ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Sep 15 16:01:02 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TRNG_IMPL_3 -c TRNG_IMPL_3
+Info: Found 2 design units, including 1 entities, in source file trng_impl_3.vhd
+    Info: Found design unit 1: TRNG_IMPL_3-hardware
+    Info: Found entity 1: TRNG_IMPL_3
+Info: Found 2 design units, including 1 entities, in source file /users/leona/onedrive - ufpr.br/ic/projetos/quartus ii/rng/trng/flipflop.vhd
+    Info: Found design unit 1: flipflop-hardware
+    Info: Found entity 1: flipflop
+Info: Found 2 design units, including 1 entities, in source file /users/leona/onedrive - ufpr.br/ic/projetos/quartus ii/rng/trng/o_ring.vhd
+    Info: Found design unit 1: O_Ring-hardware
+    Info: Found entity 1: O_Ring
+Info: Found 2 design units, including 1 entities, in source file /users/leona/onedrive - ufpr.br/ic/projetos/quartus ii/rng/trng/xor_c.vhd
+    Info: Found design unit 1: XOR_C-hardware
+    Info: Found entity 1: XOR_C
+Info: Elaborating entity "TRNG_IMPL_3" for the top level hierarchy
+Info: Elaborating entity "O_Ring" for hierarchy "O_Ring:anel_1_1"
+Info: Elaborating entity "flipflop" for hierarchy "flipflop:flip_1_1"
+Info: Elaborating entity "XOR_C" for hierarchy "XOR_C:XOR_1_1"
+Info: Found the following redundant logic cells in design
+    Info (17048): Logic cell "O_Ring:anel_1_2|sig3"
+    Info (17048): Logic cell "O_Ring:anel_3_2|sig3"
+    Info (17048): Logic cell "O_Ring:anel_4_2|sig3"
+    Info (17048): Logic cell "O_Ring:anel_5_2|sig3"
+    Info (17048): Logic cell "O_Ring:anel_1_2|sig2"
+    Info (17048): Logic cell "O_Ring:anel_3_2|sig2"
+    Info (17048): Logic cell "O_Ring:anel_4_2|sig2"
+    Info (17048): Logic cell "O_Ring:anel_5_2|sig2"
+    Info (17048): Logic cell "O_Ring:anel_1_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_2_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_3_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_4_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_5_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_6_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_7_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_8_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_9_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_10_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_11_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_12_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_13_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_14_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_15_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_16_1|sig3"
+    Info (17048): Logic cell "O_Ring:anel_1_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_2_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_3_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_4_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_5_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_6_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_7_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_8_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_9_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_10_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_11_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_12_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_13_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_14_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_15_1|sig2"
+    Info (17048): Logic cell "O_Ring:anel_16_1|sig2"
+Info: Implemented 120 device resources after synthesis - the final resource count might be different
+    Info: Implemented 2 input pins
+    Info: Implemented 1 output pins
+    Info: Implemented 117 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 240 megabytes
+    Info: Processing ended: Thu Sep 15 16:01:07 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+

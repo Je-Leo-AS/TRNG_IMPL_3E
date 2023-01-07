@@ -1,0 +1,473 @@
+|TRNG_IMPL_3
+clk => flipflop:flip_1_1.clk
+clk => S0~reg0.CLK
+clk => clk2.CLK
+clk => flipflop:flip_2_1.clk
+clk => flipflop:flip_3_1.clk
+clk => flipflop:flip_4_1.clk
+clk => flipflop:flip_5_1.clk
+clk => flipflop:flip_6_1.clk
+clk => flipflop:flip_7_1.clk
+clk => flipflop:flip_8_1.clk
+clk => flipflop:flip_9_1.clk
+clk => flipflop:flip_10_1.clk
+clk => flipflop:flip_11_1.clk
+clk => flipflop:flip_12_1.clk
+clk => flipflop:flip_13_1.clk
+clk => flipflop:flip_14_1.clk
+clk => flipflop:flip_15_1.clk
+clk => flipflop:flip_16_1.clk
+clk => XOR_C:XOR_1_1.clk
+clk => XOR_C:XOR_2_1.clk
+clk => XOR_C:XOR_3_1.clk
+clk => XOR_C:XOR_4_1.clk
+clk => XOR_C:XOR_5_1.clk
+clk => XOR_C:XOR_6_1.clk
+clk => XOR_C:XOR_7_1.clk
+clk => XOR_C:XOR_8_1.clk
+clk => XOR_C:XOR_1_2.clk
+clk => XOR_C:XOR_2_2.clk
+clk => XOR_C:XOR_3_2.clk
+clk => XOR_C:XOR_4_2.clk
+clk => flipflop:flip_1_2.clk
+clk => flipflop:flip_2_2.clk
+clk => flipflop:flip_3_2.clk
+clk => flipflop:flip_4_2.clk
+clk => XOR_C:XOR_1_3.clk
+clk => XOR_C:XOR_2_3.clk
+clk => XOR_C:XOR_3_3.clk
+rst => O_Ring:anel_1_1.sel
+rst => S0~reg0.ACLR
+rst => O_Ring:anel_2_1.sel
+rst => O_Ring:anel_3_1.sel
+rst => O_Ring:anel_4_1.sel
+rst => O_Ring:anel_5_1.sel
+rst => O_Ring:anel_6_1.sel
+rst => O_Ring:anel_7_1.sel
+rst => O_Ring:anel_8_1.sel
+rst => O_Ring:anel_9_1.sel
+rst => O_Ring:anel_10_1.sel
+rst => O_Ring:anel_11_1.sel
+rst => O_Ring:anel_12_1.sel
+rst => O_Ring:anel_13_1.sel
+rst => O_Ring:anel_14_1.sel
+rst => O_Ring:anel_15_1.sel
+rst => O_Ring:anel_16_1.sel
+rst => flipflop:flip_1_1.rst
+rst => flipflop:flip_2_1.rst
+rst => flipflop:flip_3_1.rst
+rst => flipflop:flip_4_1.rst
+rst => flipflop:flip_5_1.rst
+rst => flipflop:flip_6_1.rst
+rst => flipflop:flip_7_1.rst
+rst => flipflop:flip_8_1.rst
+rst => flipflop:flip_9_1.rst
+rst => flipflop:flip_10_1.rst
+rst => flipflop:flip_11_1.rst
+rst => flipflop:flip_12_1.rst
+rst => flipflop:flip_13_1.rst
+rst => flipflop:flip_14_1.rst
+rst => flipflop:flip_15_1.rst
+rst => flipflop:flip_16_1.rst
+rst => XOR_C:XOR_1_1.rst
+rst => XOR_C:XOR_2_1.rst
+rst => XOR_C:XOR_3_1.rst
+rst => XOR_C:XOR_4_1.rst
+rst => XOR_C:XOR_5_1.rst
+rst => XOR_C:XOR_6_1.rst
+rst => XOR_C:XOR_7_1.rst
+rst => XOR_C:XOR_8_1.rst
+rst => XOR_C:XOR_1_2.rst
+rst => XOR_C:XOR_2_2.rst
+rst => XOR_C:XOR_3_2.rst
+rst => XOR_C:XOR_4_2.rst
+rst => flipflop:flip_1_2.rst
+rst => flipflop:flip_2_2.rst
+rst => flipflop:flip_3_2.rst
+rst => flipflop:flip_4_2.rst
+rst => XOR_C:XOR_1_3.rst
+rst => XOR_C:XOR_2_3.rst
+rst => XOR_C:XOR_3_3.rst
+S0 <= S0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_1_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_2_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_3_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_4_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_5_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_6_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_7_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_8_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_9_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_10_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_11_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_12_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_13_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_14_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_15_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_16_1
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_1_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_2_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_3_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_4_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_5_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_6_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_7_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_8_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_9_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_10_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_11_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_12_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_13_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_14_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_15_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_16_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_1_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_2_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_3_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_4_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_5_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_6_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_7_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_8_1
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_1_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_2_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_3_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_4_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_1_2
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_3_2
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_4_2
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|O_Ring:anel_5_2
+sel => sig1.OUTPUTSELECT
+A => sig1.DATAB
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_1_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_2_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_3_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|flipflop:flip_4_2
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S~reg0.DATAIN
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_1_3
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_2_3
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TRNG_IMPL_3|XOR_C:XOR_3_3
+clk => S~reg0.CLK
+rst => S~reg0.ACLR
+A => S.IN0
+B => S.IN1
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

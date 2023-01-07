@@ -1,0 +1,400 @@
+Classic Timing Analyzer report for TRNG_IMPL_3
+Thu Sep 15 16:01:28 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                               ;
++------------------------------+-------+---------------+----------------------------------+----------------+---------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From           ; To                  ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+----------------+---------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 6.098 ns                         ; rst            ; flipflop:flip_8_1|S ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 7.032 ns                         ; S0~reg0        ; S0                  ; clk        ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -4.113 ns                        ; rst            ; flipflop:flip_4_1|S ; --         ; clk      ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; 413.91 MHz ( period = 2.416 ns ) ; clk2~DUPLICATE ; flipflop:flip_3_2|S ; clk        ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                ;                     ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+----------------+---------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2S15F484C3       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; Off                ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                              ;
++-------+------------------------------------------------+----------------------+---------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                 ; To                  ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+----------------------+---------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 413.91 MHz ( period = 2.416 ns )               ; clk2~DUPLICATE       ; flipflop:flip_3_2|S ; clk        ; clk      ; None                        ; None                      ; 2.241 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; clk2~DUPLICATE       ; flipflop:flip_4_2|S ; clk        ; clk      ; None                        ; None                      ; 1.752 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; clk2                 ; flipflop:flip_2_2|S ; clk        ; clk      ; None                        ; None                      ; 1.490 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_3_2|S  ; XOR_C:XOR_2_3|S     ; clk        ; clk      ; None                        ; None                      ; 1.401 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_2_1|S  ; XOR_C:XOR_1_1|S     ; clk        ; clk      ; None                        ; None                      ; 1.345 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; clk2                 ; flipflop:flip_1_2|S ; clk        ; clk      ; None                        ; None                      ; 1.282 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_1_2|S      ; flipflop:flip_1_2|S ; clk        ; clk      ; None                        ; None                      ; 1.266 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_3_2|S      ; flipflop:flip_3_2|S ; clk        ; clk      ; None                        ; None                      ; 1.264 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_2_2|S      ; flipflop:flip_2_2|S ; clk        ; clk      ; None                        ; None                      ; 1.255 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_4_2|S      ; flipflop:flip_4_2|S ; clk        ; clk      ; None                        ; None                      ; 1.253 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_12_1|S ; XOR_C:XOR_6_1|S     ; clk        ; clk      ; None                        ; None                      ; 1.258 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_6_1|S      ; XOR_C:XOR_3_2|S     ; clk        ; clk      ; None                        ; None                      ; 1.154 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_8_1|S      ; XOR_C:XOR_4_2|S     ; clk        ; clk      ; None                        ; None                      ; 1.153 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_2_1|S      ; XOR_C:XOR_1_2|S     ; clk        ; clk      ; None                        ; None                      ; 1.149 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_3_1|S      ; XOR_C:XOR_2_2|S     ; clk        ; clk      ; None                        ; None                      ; 1.147 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_1_3|S      ; XOR_C:XOR_3_3|S     ; clk        ; clk      ; None                        ; None                      ; 1.062 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_4_2|S  ; XOR_C:XOR_2_3|S     ; clk        ; clk      ; None                        ; None                      ; 1.008 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_5_1|S      ; XOR_C:XOR_3_2|S     ; clk        ; clk      ; None                        ; None                      ; 0.980 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_7_1|S      ; XOR_C:XOR_4_2|S     ; clk        ; clk      ; None                        ; None                      ; 0.979 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_1_1|S      ; XOR_C:XOR_1_2|S     ; clk        ; clk      ; None                        ; None                      ; 0.976 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_4_1|S      ; XOR_C:XOR_2_2|S     ; clk        ; clk      ; None                        ; None                      ; 0.950 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_1_2|S  ; XOR_C:XOR_1_3|S     ; clk        ; clk      ; None                        ; None                      ; 0.903 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_8_1|S  ; XOR_C:XOR_4_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.847 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_2_2|S  ; XOR_C:XOR_1_3|S     ; clk        ; clk      ; None                        ; None                      ; 0.842 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_9_1|S  ; XOR_C:XOR_5_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.792 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_13_1|S ; XOR_C:XOR_7_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.792 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_16_1|S ; XOR_C:XOR_8_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.759 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_4_1|S  ; XOR_C:XOR_2_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.629 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_5_1|S  ; XOR_C:XOR_3_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.624 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_14_1|S ; XOR_C:XOR_7_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.592 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_3_1|S  ; XOR_C:XOR_2_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.574 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_3_3|S      ; S0~reg0             ; clk        ; clk      ; None                        ; None                      ; 0.511 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_15_1|S ; XOR_C:XOR_8_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.501 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_7_1|S  ; XOR_C:XOR_4_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.417 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_10_1|S ; XOR_C:XOR_5_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.417 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_11_1|S ; XOR_C:XOR_6_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.415 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_1_1|S  ; XOR_C:XOR_1_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.414 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; flipflop:flip_6_1|S  ; XOR_C:XOR_3_1|S     ; clk        ; clk      ; None                        ; None                      ; 0.413 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; XOR_C:XOR_2_3|S      ; XOR_C:XOR_3_3|S     ; clk        ; clk      ; None                        ; None                      ; 0.406 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; clk2                 ; clk2                ; clk        ; clk      ; None                        ; None                      ; 0.396 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; clk2~DUPLICATE       ; clk2~DUPLICATE      ; clk        ; clk      ; None                        ; None                      ; 0.396 ns                ;
++-------+------------------------------------------------+----------------------+---------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------+
+; tsu                                                                        ;
++-------+--------------+------------+------+----------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To                   ; To Clock ;
++-------+--------------+------------+------+----------------------+----------+
+; N/A   ; None         ; 6.098 ns   ; rst  ; flipflop:flip_8_1|S  ; clk      ;
+; N/A   ; None         ; 5.648 ns   ; rst  ; flipflop:flip_6_1|S  ; clk      ;
+; N/A   ; None         ; 5.507 ns   ; rst  ; flipflop:flip_7_1|S  ; clk      ;
+; N/A   ; None         ; 5.353 ns   ; rst  ; flipflop:flip_15_1|S ; clk      ;
+; N/A   ; None         ; 5.337 ns   ; rst  ; flipflop:flip_1_1|S  ; clk      ;
+; N/A   ; None         ; 5.327 ns   ; rst  ; flipflop:flip_14_1|S ; clk      ;
+; N/A   ; None         ; 5.222 ns   ; rst  ; flipflop:flip_3_1|S  ; clk      ;
+; N/A   ; None         ; 5.127 ns   ; rst  ; flipflop:flip_16_1|S ; clk      ;
+; N/A   ; None         ; 5.100 ns   ; rst  ; flipflop:flip_11_1|S ; clk      ;
+; N/A   ; None         ; 5.018 ns   ; rst  ; flipflop:flip_9_1|S  ; clk      ;
+; N/A   ; None         ; 5.005 ns   ; rst  ; flipflop:flip_5_1|S  ; clk      ;
+; N/A   ; None         ; 4.978 ns   ; rst  ; flipflop:flip_13_1|S ; clk      ;
+; N/A   ; None         ; 4.909 ns   ; rst  ; flipflop:flip_12_1|S ; clk      ;
+; N/A   ; None         ; 4.672 ns   ; rst  ; flipflop:flip_10_1|S ; clk      ;
+; N/A   ; None         ; 4.506 ns   ; rst  ; flipflop:flip_2_1|S  ; clk      ;
+; N/A   ; None         ; 4.352 ns   ; rst  ; flipflop:flip_4_1|S  ; clk      ;
++-------+--------------+------------+------+----------------------+----------+
+
+
++---------------------------------------------------------------+
+; tco                                                           ;
++-------+--------------+------------+---------+----+------------+
+; Slack ; Required tco ; Actual tco ; From    ; To ; From Clock ;
++-------+--------------+------------+---------+----+------------+
+; N/A   ; None         ; 7.032 ns   ; S0~reg0 ; S0 ; clk        ;
++-------+--------------+------------+---------+----+------------+
+
+
++----------------------------------------------------------------------------------+
+; th                                                                               ;
++---------------+-------------+-----------+------+----------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To                   ; To Clock ;
++---------------+-------------+-----------+------+----------------------+----------+
+; N/A           ; None        ; -4.113 ns ; rst  ; flipflop:flip_4_1|S  ; clk      ;
+; N/A           ; None        ; -4.267 ns ; rst  ; flipflop:flip_2_1|S  ; clk      ;
+; N/A           ; None        ; -4.433 ns ; rst  ; flipflop:flip_10_1|S ; clk      ;
+; N/A           ; None        ; -4.670 ns ; rst  ; flipflop:flip_12_1|S ; clk      ;
+; N/A           ; None        ; -4.739 ns ; rst  ; flipflop:flip_13_1|S ; clk      ;
+; N/A           ; None        ; -4.766 ns ; rst  ; flipflop:flip_5_1|S  ; clk      ;
+; N/A           ; None        ; -4.779 ns ; rst  ; flipflop:flip_9_1|S  ; clk      ;
+; N/A           ; None        ; -4.861 ns ; rst  ; flipflop:flip_11_1|S ; clk      ;
+; N/A           ; None        ; -4.888 ns ; rst  ; flipflop:flip_16_1|S ; clk      ;
+; N/A           ; None        ; -4.983 ns ; rst  ; flipflop:flip_3_1|S  ; clk      ;
+; N/A           ; None        ; -5.088 ns ; rst  ; flipflop:flip_14_1|S ; clk      ;
+; N/A           ; None        ; -5.098 ns ; rst  ; flipflop:flip_1_1|S  ; clk      ;
+; N/A           ; None        ; -5.114 ns ; rst  ; flipflop:flip_15_1|S ; clk      ;
+; N/A           ; None        ; -5.268 ns ; rst  ; flipflop:flip_7_1|S  ; clk      ;
+; N/A           ; None        ; -5.409 ns ; rst  ; flipflop:flip_6_1|S  ; clk      ;
+; N/A           ; None        ; -5.859 ns ; rst  ; flipflop:flip_8_1|S  ; clk      ;
++---------------+-------------+-----------+------+----------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Sep 15 16:01:27 2022
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off TRNG_IMPL_3 -c TRNG_IMPL_3 --timing_analysis_only
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_14_1|sig4"
+    Warning: Node "O_Ring:anel_14_1|sig1"
+    Warning: Node "O_Ring:anel_14_1|sig2"
+    Warning: Node "O_Ring:anel_14_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_13_1|sig4"
+    Warning: Node "O_Ring:anel_13_1|sig1"
+    Warning: Node "O_Ring:anel_13_1|sig2"
+    Warning: Node "O_Ring:anel_13_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_15_1|sig4"
+    Warning: Node "O_Ring:anel_15_1|sig1"
+    Warning: Node "O_Ring:anel_15_1|sig2"
+    Warning: Node "O_Ring:anel_15_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_16_1|sig4"
+    Warning: Node "O_Ring:anel_16_1|sig1"
+    Warning: Node "O_Ring:anel_16_1|sig2"
+    Warning: Node "O_Ring:anel_16_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_10_1|sig4"
+    Warning: Node "O_Ring:anel_10_1|sig1"
+    Warning: Node "O_Ring:anel_10_1|sig2"
+    Warning: Node "O_Ring:anel_10_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_9_1|sig4"
+    Warning: Node "O_Ring:anel_9_1|sig1"
+    Warning: Node "O_Ring:anel_9_1|sig2"
+    Warning: Node "O_Ring:anel_9_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_11_1|sig4"
+    Warning: Node "O_Ring:anel_11_1|sig1"
+    Warning: Node "O_Ring:anel_11_1|sig2"
+    Warning: Node "O_Ring:anel_11_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_12_1|sig4"
+    Warning: Node "O_Ring:anel_12_1|sig1"
+    Warning: Node "O_Ring:anel_12_1|sig2"
+    Warning: Node "O_Ring:anel_12_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_1_1|sig4"
+    Warning: Node "O_Ring:anel_1_1|sig1"
+    Warning: Node "O_Ring:anel_1_1|sig2"
+    Warning: Node "O_Ring:anel_1_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_2_1|sig4"
+    Warning: Node "O_Ring:anel_2_1|sig1"
+    Warning: Node "O_Ring:anel_2_1|sig2"
+    Warning: Node "O_Ring:anel_2_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_3_1|sig4"
+    Warning: Node "O_Ring:anel_3_1|sig1"
+    Warning: Node "O_Ring:anel_3_1|sig2"
+    Warning: Node "O_Ring:anel_3_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_4_1|sig4"
+    Warning: Node "O_Ring:anel_4_1|sig1"
+    Warning: Node "O_Ring:anel_4_1|sig2"
+    Warning: Node "O_Ring:anel_4_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_7_1|sig4"
+    Warning: Node "O_Ring:anel_7_1|sig1"
+    Warning: Node "O_Ring:anel_7_1|sig2"
+    Warning: Node "O_Ring:anel_7_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_8_1|sig4"
+    Warning: Node "O_Ring:anel_8_1|sig1"
+    Warning: Node "O_Ring:anel_8_1|sig2"
+    Warning: Node "O_Ring:anel_8_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_6_1|sig4"
+    Warning: Node "O_Ring:anel_6_1|sig1"
+    Warning: Node "O_Ring:anel_6_1|sig2"
+    Warning: Node "O_Ring:anel_6_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_5_1|sig4"
+    Warning: Node "O_Ring:anel_5_1|sig1"
+    Warning: Node "O_Ring:anel_5_1|sig2"
+    Warning: Node "O_Ring:anel_5_1|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_5_2|sig4"
+    Warning: Node "O_Ring:anel_5_2|sig1"
+    Warning: Node "O_Ring:anel_5_2|sig2"
+    Warning: Node "O_Ring:anel_5_2|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_4_2|sig4"
+    Warning: Node "O_Ring:anel_4_2|sig1"
+    Warning: Node "O_Ring:anel_4_2|sig2"
+    Warning: Node "O_Ring:anel_4_2|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_1_2|sig4"
+    Warning: Node "O_Ring:anel_1_2|sig1"
+    Warning: Node "O_Ring:anel_1_2|sig2"
+    Warning: Node "O_Ring:anel_1_2|sig3"
+Warning: Found combinational loop of 4 nodes
+    Warning: Node "O_Ring:anel_3_2|sig4"
+    Warning: Node "O_Ring:anel_3_2|sig1"
+    Warning: Node "O_Ring:anel_3_2|sig2"
+    Warning: Node "O_Ring:anel_3_2|sig3"
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: Clock "clk" has Internal fmax of 413.91 MHz between source register "clk2~DUPLICATE" and destination register "flipflop:flip_3_2|S" (period= 2.416 ns)
+    Info: + Longest register to register delay is 2.241 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X30_Y20_N19; Fanout = 5; REG Node = 'clk2~DUPLICATE'
+        Info: 2: + IC(0.000 ns) + CELL(2.086 ns) = 2.086 ns; Loc. = LCCOMB_X22_Y14_N16; Fanout = 2; COMB LOOP Node = 'O_Ring:anel_4_2|sig4'
+            Info: Loc. = LCCOMB_X22_Y14_N16; Node "O_Ring:anel_4_2|sig4"
+            Info: Loc. = LCCOMB_X22_Y14_N14; Node "O_Ring:anel_4_2|sig3"
+            Info: Loc. = LCCOMB_X22_Y14_N10; Node "O_Ring:anel_4_2|sig2"
+            Info: Loc. = LCCOMB_X22_Y14_N20; Node "O_Ring:anel_4_2|sig1"
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 2.241 ns; Loc. = LCFF_X22_Y14_N17; Fanout = 1; REG Node = 'flipflop:flip_3_2|S'
+        Info: Total cell delay = 2.241 ns ( 100.00 % )
+    Info: - Smallest clock skew is 0.009 ns
+        Info: + Shortest clock path from clock "clk" to destination register is 2.481 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+            Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 38; COMB Node = 'clk~clkctrl'
+            Info: 3: + IC(0.666 ns) + CELL(0.618 ns) = 2.481 ns; Loc. = LCFF_X22_Y14_N17; Fanout = 1; REG Node = 'flipflop:flip_3_2|S'
+            Info: Total cell delay = 1.472 ns ( 59.33 % )
+            Info: Total interconnect delay = 1.009 ns ( 40.67 % )
+        Info: - Longest clock path from clock "clk" to source register is 2.472 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+            Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 38; COMB Node = 'clk~clkctrl'
+            Info: 3: + IC(0.657 ns) + CELL(0.618 ns) = 2.472 ns; Loc. = LCFF_X30_Y20_N19; Fanout = 5; REG Node = 'clk2~DUPLICATE'
+            Info: Total cell delay = 1.472 ns ( 59.55 % )
+            Info: Total interconnect delay = 1.000 ns ( 40.45 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Micro setup delay of destination is 0.090 ns
+Info: tsu for register "flipflop:flip_8_1|S" (data pin = "rst", clock pin = "clk") is 6.098 ns
+    Info: + Longest pin to register delay is 8.482 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.864 ns) = 0.864 ns; Loc. = PIN_M21; Fanout = 33; PIN Node = 'rst'
+        Info: 2: + IC(0.000 ns) + CELL(7.463 ns) = 8.327 ns; Loc. = LCCOMB_X31_Y20_N6; Fanout = 2; COMB LOOP Node = 'O_Ring:anel_8_1|sig4'
+            Info: Loc. = LCCOMB_X31_Y20_N6; Node "O_Ring:anel_8_1|sig4"
+            Info: Loc. = LCCOMB_X39_Y16_N0; Node "O_Ring:anel_8_1|sig3"
+            Info: Loc. = LCCOMB_X39_Y16_N2; Node "O_Ring:anel_8_1|sig2"
+            Info: Loc. = LCCOMB_X31_Y20_N28; Node "O_Ring:anel_8_1|sig1"
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 8.482 ns; Loc. = LCFF_X31_Y20_N7; Fanout = 1; REG Node = 'flipflop:flip_8_1|S'
+        Info: Total cell delay = 8.482 ns ( 100.00 % )
+    Info: + Micro setup delay of destination is 0.090 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.474 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 38; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.659 ns) + CELL(0.618 ns) = 2.474 ns; Loc. = LCFF_X31_Y20_N7; Fanout = 1; REG Node = 'flipflop:flip_8_1|S'
+        Info: Total cell delay = 1.472 ns ( 59.50 % )
+        Info: Total interconnect delay = 1.002 ns ( 40.50 % )
+Info: tco from clock "clk" to destination pin "S0" through register "S0~reg0" is 7.032 ns
+    Info: + Longest clock path from clock "clk" to source register is 2.474 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 38; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.659 ns) + CELL(0.618 ns) = 2.474 ns; Loc. = LCFF_X27_Y18_N17; Fanout = 1; REG Node = 'S0~reg0'
+        Info: Total cell delay = 1.472 ns ( 59.50 % )
+        Info: Total interconnect delay = 1.002 ns ( 40.50 % )
+    Info: + Micro clock to output delay of source is 0.094 ns
+    Info: + Longest register to pin delay is 4.464 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X27_Y18_N17; Fanout = 1; REG Node = 'S0~reg0'
+        Info: 2: + IC(2.320 ns) + CELL(2.144 ns) = 4.464 ns; Loc. = PIN_N22; Fanout = 0; PIN Node = 'S0'
+        Info: Total cell delay = 2.144 ns ( 48.03 % )
+        Info: Total interconnect delay = 2.320 ns ( 51.97 % )
+Info: th for register "flipflop:flip_4_1|S" (data pin = "rst", clock pin = "clk") is -4.113 ns
+    Info: + Longest clock path from clock "clk" to destination register is 2.469 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = PIN_N20; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.343 ns) + CELL(0.000 ns) = 1.197 ns; Loc. = CLKCTRL_G3; Fanout = 38; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.654 ns) + CELL(0.618 ns) = 2.469 ns; Loc. = LCFF_X29_Y20_N7; Fanout = 1; REG Node = 'flipflop:flip_4_1|S'
+        Info: Total cell delay = 1.472 ns ( 59.62 % )
+        Info: Total interconnect delay = 0.997 ns ( 40.38 % )
+    Info: + Micro hold delay of destination is 0.149 ns
+    Info: - Shortest pin to register delay is 6.731 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.864 ns) = 0.864 ns; Loc. = PIN_M21; Fanout = 33; PIN Node = 'rst'
+        Info: 2: + IC(0.000 ns) + CELL(5.712 ns) = 6.576 ns; Loc. = LCCOMB_X29_Y20_N6; Fanout = 2; COMB LOOP Node = 'O_Ring:anel_4_1|sig4'
+            Info: Loc. = LCCOMB_X29_Y20_N6; Node "O_Ring:anel_4_1|sig4"
+            Info: Loc. = LCCOMB_X29_Y20_N14; Node "O_Ring:anel_4_1|sig3"
+            Info: Loc. = LCCOMB_X29_Y20_N28; Node "O_Ring:anel_4_1|sig2"
+            Info: Loc. = LCCOMB_X29_Y20_N26; Node "O_Ring:anel_4_1|sig1"
+        Info: 3: + IC(0.000 ns) + CELL(0.155 ns) = 6.731 ns; Loc. = LCFF_X29_Y20_N7; Fanout = 1; REG Node = 'flipflop:flip_4_1|S'
+        Info: Total cell delay = 6.731 ns ( 100.00 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 191 megabytes
+    Info: Processing ended: Thu Sep 15 16:01:28 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

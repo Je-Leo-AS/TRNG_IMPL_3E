@@ -1,0 +1,299 @@
+Simulator report for TRNG_IMPL_3
+Thu Sep 15 16:06:05 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 500.0 us     ;
+; Simulation Netlist Size     ; 140 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 22976477     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 140          ;
+; Total output ports checked                          ; 140          ;
+; Total output ports with complete 1/0-value coverage ; 140          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |TRNG_IMPL_3|S0~reg0               ; |TRNG_IMPL_3|S0~reg0               ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_3|S       ; |TRNG_IMPL_3|XOR_C:XOR_3_3|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_3|S       ; |TRNG_IMPL_3|XOR_C:XOR_1_3|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_3|S       ; |TRNG_IMPL_3|XOR_C:XOR_2_3|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_3|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_3_3|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_1_2|S   ; |TRNG_IMPL_3|flipflop:flip_1_2|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_2_2|S   ; |TRNG_IMPL_3|flipflop:flip_2_2|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_3|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_1_3|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_3_2|S   ; |TRNG_IMPL_3|flipflop:flip_3_2|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_4_2|S   ; |TRNG_IMPL_3|flipflop:flip_4_2|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_3|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_2_3|S~0     ; combout          ;
+; |TRNG_IMPL_3|clk2                  ; |TRNG_IMPL_3|clk2                  ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_2|S       ; |TRNG_IMPL_3|XOR_C:XOR_1_2|S       ; regout           ;
+; |TRNG_IMPL_3|O_Ring:anel_1_2|sig1  ; |TRNG_IMPL_3|O_Ring:anel_1_2|sig1  ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_2|S       ; |TRNG_IMPL_3|XOR_C:XOR_2_2|S       ; regout           ;
+; |TRNG_IMPL_3|O_Ring:anel_3_2|sig1  ; |TRNG_IMPL_3|O_Ring:anel_3_2|sig1  ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_2|S       ; |TRNG_IMPL_3|XOR_C:XOR_3_2|S       ; regout           ;
+; |TRNG_IMPL_3|O_Ring:anel_4_2|sig1  ; |TRNG_IMPL_3|O_Ring:anel_4_2|sig1  ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_4_2|S       ; |TRNG_IMPL_3|XOR_C:XOR_4_2|S       ; regout           ;
+; |TRNG_IMPL_3|O_Ring:anel_5_2|sig1  ; |TRNG_IMPL_3|O_Ring:anel_5_2|sig1  ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_1_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_2_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_2|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_1_2|S~0     ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_3_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_4_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_4_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_2|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_2_2|S~0     ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_5_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_5_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_6_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_6_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_2|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_3_2|S~0     ; combout          ;
+; |TRNG_IMPL_3|XOR_C:XOR_7_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_7_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_8_1|S       ; |TRNG_IMPL_3|XOR_C:XOR_8_1|S       ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_4_2|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_4_2|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_1_1|S   ; |TRNG_IMPL_3|flipflop:flip_1_1|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_2_1|S   ; |TRNG_IMPL_3|flipflop:flip_2_1|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_1_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_1_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_3_1|S   ; |TRNG_IMPL_3|flipflop:flip_3_1|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_4_1|S   ; |TRNG_IMPL_3|flipflop:flip_4_1|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_2_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_2_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_5_1|S   ; |TRNG_IMPL_3|flipflop:flip_5_1|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_6_1|S   ; |TRNG_IMPL_3|flipflop:flip_6_1|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_3_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_3_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_7_1|S   ; |TRNG_IMPL_3|flipflop:flip_7_1|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_8_1|S   ; |TRNG_IMPL_3|flipflop:flip_8_1|S   ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_4_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_4_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_9_1|S   ; |TRNG_IMPL_3|flipflop:flip_9_1|S   ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_10_1|S  ; |TRNG_IMPL_3|flipflop:flip_10_1|S  ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_5_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_5_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_11_1|S  ; |TRNG_IMPL_3|flipflop:flip_11_1|S  ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_12_1|S  ; |TRNG_IMPL_3|flipflop:flip_12_1|S  ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_6_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_6_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_13_1|S  ; |TRNG_IMPL_3|flipflop:flip_13_1|S  ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_14_1|S  ; |TRNG_IMPL_3|flipflop:flip_14_1|S  ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_7_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_7_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|flipflop:flip_15_1|S  ; |TRNG_IMPL_3|flipflop:flip_15_1|S  ; regout           ;
+; |TRNG_IMPL_3|flipflop:flip_16_1|S  ; |TRNG_IMPL_3|flipflop:flip_16_1|S  ; regout           ;
+; |TRNG_IMPL_3|XOR_C:XOR_8_1|S~0     ; |TRNG_IMPL_3|XOR_C:XOR_8_1|S~0     ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_1_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_2_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_2_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_3_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_4_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_5_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_6_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_6_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_7_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_7_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_8_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_8_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_9_1|sig1  ; |TRNG_IMPL_3|O_Ring:anel_9_1|sig1  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_10_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_10_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_11_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_11_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_12_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_12_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_13_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_13_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_14_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_14_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_15_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_15_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_16_1|sig1 ; |TRNG_IMPL_3|O_Ring:anel_16_1|sig1 ; combout          ;
+; |TRNG_IMPL_3|clk2~0                ; |TRNG_IMPL_3|clk2~0                ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_2|sig4  ; |TRNG_IMPL_3|O_Ring:anel_1_2|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_2|sig4  ; |TRNG_IMPL_3|O_Ring:anel_3_2|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_2|sig4  ; |TRNG_IMPL_3|O_Ring:anel_4_2|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_2|sig4  ; |TRNG_IMPL_3|O_Ring:anel_5_2|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_2|sig3  ; |TRNG_IMPL_3|O_Ring:anel_1_2|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_2|sig3  ; |TRNG_IMPL_3|O_Ring:anel_3_2|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_2|sig3  ; |TRNG_IMPL_3|O_Ring:anel_4_2|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_2|sig3  ; |TRNG_IMPL_3|O_Ring:anel_5_2|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_2|sig2  ; |TRNG_IMPL_3|O_Ring:anel_1_2|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_2|sig2  ; |TRNG_IMPL_3|O_Ring:anel_3_2|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_2|sig2  ; |TRNG_IMPL_3|O_Ring:anel_4_2|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_2|sig2  ; |TRNG_IMPL_3|O_Ring:anel_5_2|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_1_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_2_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_2_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_3_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_4_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_5_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_6_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_6_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_7_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_7_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_8_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_8_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_9_1|sig4  ; |TRNG_IMPL_3|O_Ring:anel_9_1|sig4  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_10_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_10_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_11_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_11_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_12_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_12_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_13_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_13_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_14_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_14_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_15_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_15_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_16_1|sig4 ; |TRNG_IMPL_3|O_Ring:anel_16_1|sig4 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_1_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_2_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_2_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_3_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_4_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_5_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_6_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_6_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_7_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_7_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_8_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_8_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_9_1|sig3  ; |TRNG_IMPL_3|O_Ring:anel_9_1|sig3  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_10_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_10_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_11_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_11_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_12_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_12_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_13_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_13_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_14_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_14_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_15_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_15_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_16_1|sig3 ; |TRNG_IMPL_3|O_Ring:anel_16_1|sig3 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_1_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_1_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_2_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_2_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_3_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_3_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_4_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_4_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_5_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_5_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_6_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_6_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_7_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_7_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_8_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_8_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_9_1|sig2  ; |TRNG_IMPL_3|O_Ring:anel_9_1|sig2  ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_10_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_10_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_11_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_11_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_12_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_12_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_13_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_13_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_14_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_14_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_15_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_15_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|O_Ring:anel_16_1|sig2 ; |TRNG_IMPL_3|O_Ring:anel_16_1|sig2 ; combout          ;
+; |TRNG_IMPL_3|clk                   ; |TRNG_IMPL_3|clk~corein            ; combout          ;
+; |TRNG_IMPL_3|rst                   ; |TRNG_IMPL_3|rst~corein            ; combout          ;
+; |TRNG_IMPL_3|S0                    ; |TRNG_IMPL_3|S0                    ; padio            ;
+; |TRNG_IMPL_3|clk~clkctrl           ; |TRNG_IMPL_3|clk~clkctrl           ; outclk           ;
+; |TRNG_IMPL_3|rst~clkctrl           ; |TRNG_IMPL_3|rst~clkctrl           ; outclk           ;
+; |TRNG_IMPL_3|clk2~0DUPLICATE       ; |TRNG_IMPL_3|clk2~0DUPLICATE       ; combout          ;
+; |TRNG_IMPL_3|clk2~DUPLICATE        ; |TRNG_IMPL_3|clk2~DUPLICATE        ; regout           ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Sep 15 16:01:40 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TRNG_IMPL_3 -c TRNG_IMPL_3
+Info: Using vector source file "C:/Users/Leona/OneDrive - ufpr.br/IC/Projetos/Quartus II/RNG/TRNG_IMPL_3/TRNG_IMPL_3.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 22976477
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Thu Sep 15 16:06:05 2022
+    Info: Elapsed time: 00:04:25
+    Info: Total CPU time (on all processors): 00:04:21
+
+
